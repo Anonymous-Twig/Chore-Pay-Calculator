@@ -1,0 +1,50 @@
+pay = 0
+
+def one_dollar_pay(amount):
+    return amount * 1
+def two_dollar_pay(amount):
+    return amount * 2
+def three_dollar_pay(amount):
+    return amount * 3
+def four_dollar_pay(amount):
+    return amount * 4
+def five_dollar_pay(amount):
+    return amount * 5
+
+feed = int(input("How many 'Feed Animals'?: "))
+pay += one_dollar_pay(feed)
+
+dog = int(input("How many 'Take Dog Out'?: "))
+pay += one_dollar_pay(dog)
+
+trash_bin = int(input("How many 'Trash to Bin'?: "))
+pay += one_dollar_pay(trash_bin)
+
+recycling_bin = int(input("How many 'Recycling to Bin'?: "))
+pay += one_dollar_pay(recycling_bin)
+
+dish = int(input("How many 'Dishes'?: "))
+pay += two_dollar_pay(dish)
+
+litter = int(input("How many 'Clean Litter'?: "))
+pay += four_dollar_pay(litter)
+
+trash_curb = int(input("How many 'Trash to Curb'?: "))
+pay += two_dollar_pay(trash_curb)
+
+recycling_curb = int(input("How many 'Recycling to Curb'?: "))
+pay += two_dollar_pay(recycling_curb)
+
+bedroom = int(input("How many 'Clean Bedroom'?: "))
+pay += five_dollar_pay(bedroom)
+
+restroom = int(input("How many 'Clean Restroom'?: "))
+pay += four_dollar_pay(restroom)
+
+clothes = int(input("How many 'Laundry'?: "))
+pay += five_dollar_pay(clothes)
+
+sheet = int(input("How many 'Sheets'?: "))
+pay += three_dollar_pay(sheet)
+
+print(pay)
